@@ -1,0 +1,138 @@
+# Placeholders: Regions: {rgName} - name of region; {pos1} - x1 and z1; {pos2} - x2 and z2; {area} - area of the region; {creator} - creator of the region;
+# {owners} - list of owners; {members} - list of members; {flags} - list of flags and their values; {player} - nickname of the player;
+Messages:
+  ru:
+    Regions:
+      Info:
+        - '&bИнформация о регионе: &9{rgName}'
+        - '&fПервая точка: &b{pos1}'
+        - '&fВторая точка: &b{pos2}'
+        - '&fПлощадь: &b{area}'
+        - '&fСоздатель: &b{creator}'
+        - '&fВладельцы: &b{owners}'
+        - '&fУчастники: &b{members}'
+        - '&fФлаги: &b{flags}'
+      List: '&fРегионы: {regions}'
+      Mylist:
+        - '&fВы создатель в: {creator}'
+        - '&fВы владелец в: {owner}'
+        - '&fВы создатель в: {creator}'
+      Success:
+        sell-enabled: '&fВы вошли в режим &b&lвыделения&f&o (Используйте &b&oПКМ&f и &b&oЛКМ&f).'
+        sell-disabled: '&fВы выключили режим &b&lвыделения&f.'
+        sell-pos1: '&fВы выделили &bпервую&f точку (&b{cords}&f)'
+        sell-pos2: '&fВы выделили &bвторую&f точку (&b{cords}&f)'
+        rg-created: '&fВы создали регион с названием &b{rgName}&f и площадью в &b{area}&f.'
+        rg-deleted: '&fВы удалили регион с названием &b{rgName}&f.'
+        flag-set: '&fВы настроили флаг &b{flag}&f на &b{value}&f.'
+        flaf-delete: '&fВы удалили флаг &b{flag}&f.'
+        member-add: '&fВы добавили участника &9{player}&f в регион &b{rgName}&f.'
+        member-remove: '&fВы удалили участника &9{player}&f из региона &b{rgName}&f.'
+        owner-add: '&fВы добавили владельца &9{player}&f в регион &b{rgName}&f.'
+        owner-remove: '&fВы удалили владельца &9{player}&f из регион &b{rgName}&f.'
+        setAdminTrue: '&fТеперь регион &b{rgName}&f является админским.'
+        setAdminFalse: '&fТеперь регион &b{rgName}&f больше не является админским.'
+        rg-give: '&fВы передали регион &b{rgName}&f игроку &b{player}&f.'
+      Errors:
+        rg-existing: '&cРегион с таким названием уже существует.'
+        rg-inexisting: '&cРегион с таким названием не существует.'
+        no-sellection: '&cВы не выделили территорию.'
+        not-member: '&cВы не являетесь участником региона чтобы делать это.'
+        not-owner: '&cВы не являетесь владельцем региона чтобы делать это.'
+        not-creator: '&cВы не являетесь создателем региона чтобы делать это.'
+        intersecting: '&cНевозможно создать регион так как он пересекается с чужим регионом (Регионом чьим создателем являетесь не Вы) в координатах &6{cords}&f.'
+        flag-no-perms: '&cУ вас нет прав на использование данного Флага.'
+        no-region-here: '&cЗдесь нет никаких регионов.'
+        no-flag: '&cДанный флаг не настроен для вашего регионе.'
+        flag-inexisting: '&cФлаг не найден.'
+        member-in: '&cУчастник уже состоит в регионе.'
+        member-out: '&cУчастник не состоит в регионе.'
+        owner-in: '&cВладелец уже состоит в регионе.'
+        owner-out: '&cВладелец не состоит в регионе.'
+        to-many-rg: '&cВы привысили доступное Вам количество регионов.'
+        to-big-area: '&cВы привысили доступное Вам площадь регионов.'
+        #Flags
+        PVP-off: '&cВ данном регионе отключено ПВП.'
+        PVE-off: '&cВ данном регионе отключено ПВЕ.'
+        USE-off: '&cВ данном регионе нельзя взаимодействовать с этим.'
+        OPEN_BLOCK_INVENTORY-off: '&cВ данном регионе нельзя открывать хранилища.'
+        ENTRY-on: '&cВ данный регион нельзя входить.'
+        DROP_ITEM-off: '&cВ данном регионе нельзя выкидывать предметы.'
+        PICKUP_ITEM-off: '&cВ данном регионе нельзя поднимать предметы.'
+      Usage:
+        rg: '&b/rg sell/create/remove/flag/flags/addmember/admowner/removemember/removeowner/show/movehere/list/mylist'
+        create: '&b/rg create [название]'
+        remove: '&b/rg remove [название]'
+        flag: '&b/rg flag [регион] [flag] on/off/delete'
+  en:
+    Regions:
+      Info:
+        - '&bInformation about: &9{rgName}'
+        - '&fFirst point: &b{pos1}'
+        - '&fSecond point: &b{pos2}'
+        - '&fArea: &b{area}'
+        - '&fCreator: &b{creator}'
+        - '&fOwners: &b{owners}'
+        - '&fMembers: &b{members}'
+        - '&fFlags: &b{flags}'
+      List: '&fRegions: {regions}'
+      Mylist:
+        - '&fYou created: {creator}'
+        - '&fYou own: {owner}'
+        - '&fYou are member in: {member}'
+      Success:
+        sell-enabled: '&fYou have joined the &bselecting&f mode &f&o(Use &b&oRMB&f and &b&oLMB&f).'
+        sell-disabled: '&fYou have left the &bselecting&f mode.'
+        sell-pos1: '&fYou have selected the &bfirst&f point (&b{cords}&f).'
+        sell-pos2: 'You have selected the &bsecond&f point (&b{cords}&f).'
+        rg-created: '&fYou have created the region &b{rgName}&f with the area &b{area}&f.'
+        rg-deleted: '&fYou have removed the region &b{rgName}&f.'
+        flag-set: '&fYou have set the flag &b{flag}&f to &b{value}&f.'
+        flaf-delete: '&fYou removed the flag &b{flag}&f.'
+        member-add: '&fYou have added the member &9{player}&f to the region &b{rgName}&f.'
+        member-remove: '&fYou have removed the member &9{player}&f from the region &b{rgName}&f.'
+        owner-add: '&fYou have added the owner &9{player}&f to the region &b{rgName}&f.'
+        owner-remove: '&fYou have removed the owner &9{player}&f from the region &b{rgName}&f.'
+        setAdminTrue: '&b{rgName}&f is now an &9admin&f one.'
+        setAdminFalse: '&b{rgName}&f is no longer an &9admin&f one.'
+        rg-give: '&fYou have given the region &b{rgName}&f to the player &b{player}&f.'
+      Errors:
+        rg-existing: '&cRegion with such a name already exists.'
+        rg-inexisting: '&cThere is no region with such a name.'
+        no-sellection: '&cYou have not selected an area.'
+        not-member: '&cYou need to be a region member for this.'
+        not-owner: '&cYou need to be a region owner for this.'
+        not-creator: '&cYou need to be the region creator for this.'
+        intersecting: '&cIt is impossible to crete the region, because it is intersecting another one (whose creator is not you) in &6{cords}&f.'
+        flag-no-perms: '&cYou have no permission to use this flag.'
+        no-region-here: '&cThere are no regions in here.'
+        no-flag: '&cThere is not such a flag in this region.'
+        flag-inexisting: '&cUnavailable flag.'
+        member-in: '&cThe member is already in the region.'
+        member-out: '&cThere is no such a member in this region.'
+        owner-in: '&cThe owner is already in the region.'
+        owner-out: '&cThere is no such a owner in this region.'
+        to-many-rg: '&cYou have reached the maximum amount of regions.'
+        to-big-area: '&cThe region is too big.'
+        #Flags
+        PVP-off: '&cThe PVP-flag is turned off in this region.'
+        PVE-off: '&cThe PVE-flag is turned off in this region.'
+        USE-off: '&cYou cannot interact with this in this region'
+        OPEN_BLOCK_INVENTORY-off: '&cYou cannot open storages in this region'
+        ENTRY-on: '&cYou cannot enter this region'
+        DROP_ITEM-off: '&cYou cannot drop items in this region.'
+        PICKUP_ITEM-off: '&cYou cannot pick up items in this region.'
+      Usage:
+        rg: '&b/rg sell/create/remove/flag/flags/addmember/admowner/removemember/removeowner/show/movehere/list/mylist'
+        create: '&b/rg create [название]'
+        remove: '&b/rg remove [название]'
+        flag: '&b/rg flag [регион] [flag] on/off/delete'
+Server:
+  prefix: '&7[&aS&7] &r'
+  name: '&aServer'
+Settings:
+  selection_tool: WOODEN_AXE
+  default_flags:
+    PVP: off
+    PVE: off
+    MOB_GRIEFING: on

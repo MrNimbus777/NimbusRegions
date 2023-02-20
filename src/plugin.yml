@@ -1,0 +1,15 @@
+name: NimbusRegions
+main: ru.nimbus.regions.Main
+version: 1.0
+author: MrNimbus777
+api-version: 1.16
+permissions:
+  nrg.admin.member:
+    default: false
+  nrg.admin.owner:
+    default: false
+  nrg.admin.creator:
+    default: false
+commands:
+  rg:
+    aliases: [region, private]
